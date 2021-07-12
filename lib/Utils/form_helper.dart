@@ -8,7 +8,7 @@ class FormHelper {
 
   static Widget inputFieldWidget(
     BuildContext context,
-    Icon iconsss,
+    Icon icon,
     String keyName,
     String labelName,
     Function onValidate,
