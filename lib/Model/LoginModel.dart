@@ -1,7 +1,6 @@
 import 'dart:convert';
 
-LoginModel loginModelFromJson(String str) =>
-    LoginModel.fromJson(json.decode(str));
+LoginModel loginModelFromJson(String str) => LoginModel.fromJson(json.decode(str));
 
 class LoginModel {
   bool? success;
@@ -11,18 +10,21 @@ class LoginModel {
   Data? data;
 
   LoginModel(
-      {required this.success,
-      required this.statusCode,
-      required this.code,
-      required this.message,
-      required this.data});
+    {
+      required this.success, 
+      required this.statusCode, 
+      required this.code, 
+      required this.message, 
+      required this.data
+    }
+  );
 
   LoginModel.fromJson(Map<String, dynamic> json) {
     success = json['success'];
     statusCode = json['statusCode'];
     code = json['code'];
     message = json['message'];
-    data = json['data'].length > 0 ? new Data.fromJson(json['data']) : null;
+    data = json['data'].length >0 ? new Data.fromJson(json['data']) : null;
   }
 
   Map<String, dynamic> toJson() {
@@ -48,13 +50,16 @@ class Data {
   String? displayName;
 
   Data(
-      {required this.token,
+    {
+      required this.token,
       required this.id,
       required this.email,
       required this.nicename,
       required this.firstName,
       required this.lastName,
-      required this.displayName});
+      required this.displayName
+    }
+  );
 
   Data.fromJson(Map<String, dynamic> json) {
     token = json['token'];
