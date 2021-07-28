@@ -1,5 +1,5 @@
 // API Constant
-const String baseAPIURL = 'http://192.168.1.111/flutter_news_api/wp-json/';
+const String baseAPIURL = 'http://202.5.94.231/flutter_news_api/wp-json/';
 
 // System app name
 const String AppName = 'Smart News';
@@ -25,3 +25,14 @@ const String PROFILE_MENU = 'Profile';
 // Tabmenu Constant
 const String HEAD_SLIDE_TEXT = 'Explorer Daily News Within Tap';
 const String TEXT_LATEST_NEWS = 'Latest News';
+
+/* font sizes*/
+const textSizeSmall = 12;
+const textSizeSMedium = 14;
+const textSizeMedium = 16;
+const textSizeLargeMedium = 18;
+const textSizeNormal = 20;
+const textSizeLarge = 24;
+const textSizeXLarge = 28;
+const textSizeXXLarge = 30;
+const textSizeBig = 50;
